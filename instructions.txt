@@ -1,0 +1,18 @@
+- To begin with, start a redis server using: redis-server
+- check if the default port is 6379 or not
+- once the redis connection is established, we can run bullBoard/index.js to start the bullBoard UI
+  on port 4000
+- now we can run the other jobs present in different version of bullMQ/index-version_number.js
+
+****
+Now to stop the redis-server:
+lsof -i tcp:{PORT}
+kill -9 {PORT_ID}
+
+
+
+
+****
+To check if redis server is up & running:
+- try redis-cli>PING
+- replies PONG
